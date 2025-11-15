@@ -1,40 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[setting browser as edge]]>
+      <![CDATA[setting browser as Chrome]]>
     </line>
     <line>
-      <![CDATA[taking ScreenShot]]>
+      <![CDATA[actual result is 48]]>
+    </line>
+    <line>
+      <![CDATA[closing browser]]>
+    </line>
+    <line>
+      <![CDATA[setting browser as Chrome]]>
+    </line>
+    <line>
+      <![CDATA[gettting pincode error msg , msg is [[ChromeDriver: chrome on windows (d359e728c8b6121e66ae442c9df59138)] -> xpath: //div[contains(text(),'pincode ')]]]]>
+    </line>
+    <line>
+      <![CDATA[getting mobile number error msg , msg is Please enter a valid mobile no.]]>
+    </line>
+    <line>
+      <![CDATA[Pinocode error message is: Please enter a valid pincode]]>
+    </line>
+    <line>
+      <![CDATA[Mobile number error message isPlease enter a valid mobile no.]]>
+    </line>
+    <line>
+      <![CDATA[changes by narendra]]>
     </line>
     <line>
       <![CDATA[closing browser]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-11-07T17:53:17 IST" name="Suite" finished-at="2025-11-07T17:54:18 IST" duration-ms="60903">
+  <suite started-at="2025-11-11T18:35:32 IST" name="Default suite" finished-at="2025-11-11T18:36:40 IST" duration-ms="67400">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerPackage.HealthInsuranceRunner@23348b5d]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-11-07T17:53:17 IST" name="Test" finished-at="2025-11-07T17:54:18 IST" duration-ms="60903">
+    <test started-at="2025-11-11T18:35:32 IST" name="Default test" finished-at="2025-11-11T18:36:40 IST" duration-ms="67400">
       <class name="runnerPackage.HealthInsuranceRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runnerPackage.HealthInsuranceRunner@23348b5d]" started-at="2025-11-07T17:53:17 IST" name="setUpClass" finished-at="2025-11-07T17:53:19 IST" duration-ms="1461" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runnerPackage.HealthInsuranceRunner@23348b5d]" started-at="2025-11-11T18:35:32 IST" name="setUpClass" finished-at="2025-11-11T18:35:34 IST" duration-ms="1678" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@79a7bfbc]]>
+                <![CDATA[org.testng.TestRunner@41da3aee]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerPackage.HealthInsuranceRunner@23348b5d]" started-at="2025-11-07T17:53:19 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-07T17:54:15 IST" duration-ms="56385" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerPackage.HealthInsuranceRunner@23348b5d]" started-at="2025-11-11T18:35:34 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-11T18:36:10 IST" duration-ms="35851" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["validate coverfox health insurance for single person"]]>
+                <![CDATA["TC01: validate coverfox health insurance for single person"]]>
               </value>
             </param>
             <param index="1">
@@ -43,36 +64,60 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: null
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.fail(Assert.java:116)
-at stepDefinations.HealthInsurance.i_provide_pincode_as_mob_num_as_and_click_on_continue_button(HealthInsurance.java:68)
-at ✽.I provide pincode as "412208", mobNum as "8888888888" and click on continue button(file:///C:/Users/ACC/eclipse-workspace/coverfoxTesting/src/test/resources/FeatureFiles/CoverfoxHealthInsurance.feature:7)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
-              <![CDATA[setting browser as edge]]>
+              <![CDATA[setting browser as Chrome]]>
             </line>
             <line>
-              <![CDATA[taking ScreenShot]]>
+              <![CDATA[actual result is 48]]>
             </line>
             <line>
               <![CDATA[closing browser]]>
             </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runnerPackage.HealthInsuranceRunner@23348b5d]" started-at="2025-11-07T17:54:15 IST" name="tearDownClass" finished-at="2025-11-07T17:54:18 IST" duration-ms="2939" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerPackage.HealthInsuranceRunner@23348b5d]" started-at="2025-11-11T18:36:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-11T18:36:37 IST" duration-ms="27337" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC02: Validate CoverFox address details page error messages"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Coverfox Health Insurance Test"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[setting browser as Chrome]]>
+            </line>
+            <line>
+              <![CDATA[gettting pincode error msg , msg is [[ChromeDriver: chrome on windows (d359e728c8b6121e66ae442c9df59138)] -> xpath: //div[contains(text(),'pincode ')]]]]>
+            </line>
+            <line>
+              <![CDATA[getting mobile number error msg , msg is Please enter a valid mobile no.]]>
+            </line>
+            <line>
+              <![CDATA[Pinocode error message is: Please enter a valid pincode]]>
+            </line>
+            <line>
+              <![CDATA[Mobile number error message isPlease enter a valid mobile no.]]>
+            </line>
+            <line>
+              <![CDATA[changes by narendra]]>
+            </line>
+            <line>
+              <![CDATA[closing browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runnerPackage.HealthInsuranceRunner@23348b5d]" started-at="2025-11-11T18:36:37 IST" name="tearDownClass" finished-at="2025-11-11T18:36:40 IST" duration-ms="2400" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- runnerPackage.HealthInsuranceRunner -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

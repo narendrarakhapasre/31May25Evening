@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Reporter;
 
 public class CoverfoxAddressDetails1 {
 	
@@ -12,6 +13,9 @@ public class CoverfoxAddressDetails1 {
 	@FindBy(className = "mp-input-text") private WebElement pinCodefield;
 	@FindBy(id = "want-expert") private WebElement mobileNumfield;
 	@FindBy(className = "next-btn") private WebElement continueButton;
+	@FindBy(xpath="//div[contains(text(),'pincode ')]") private WebElement pincodeErrormsg;
+	@FindBy(xpath="//div[contains(text(),' Please enter a valid mobile no. ')]")private WebElement mobNumErrMsg;
+
 	
 	//constructor
 	
@@ -39,5 +43,18 @@ public class CoverfoxAddressDetails1 {
 		continueButton.click();
 		System.out.println("clicking on continue button");
 	}
+	
+	public String getPincodeErrMsg()
+	{
+		Reporter.log("gettting pincode error msg , msg is "+pincodeErrormsg, true);
+		return pincodeErrormsg.getText();
+	}
+	
+	public  String getMobNumErrMsg() {
+		
+		Reporter.log("getting mobile number error msg , msg is "+ mobNumErrMsg.getText(),true);
+		return mobNumErrMsg.getText();
+	}
+
 
 }

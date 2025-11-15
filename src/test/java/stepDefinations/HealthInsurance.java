@@ -76,6 +76,25 @@ public class HealthInsurance
 	    String actualResults = coverfoxResultPage.getMatchingResultNumbers();
 	    Reporter.log("actual result is "+actualResults, true);
 	}
+	@When("I click on continue button")
+	public void i_click_on_continue_button() throws InterruptedException
+	{
+		Thread.sleep(3000);
+		coverfoxAddressDetails1.continueButton();
+		
+	}
+
+	@Then("Validate error messages")
+	public void validate_error_messages() throws InterruptedException
+	{
+		Thread.sleep(2000);
+	     String pinErrMsg = coverfoxAddressDetails1.getPincodeErrMsg();
+		  String mobErrMsg= coverfoxAddressDetails1.getMobNumErrMsg();		
+			Reporter.log("Pinocode error message is: "+pinErrMsg, true);
+			Reporter.log("Mobile number error message is"+mobErrMsg, true);
+			Reporter.log("changes by narendra", true);
+
+	}
 
 
 
