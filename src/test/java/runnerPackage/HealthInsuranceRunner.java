@@ -10,7 +10,7 @@ import io.cucumber.testng.CucumberOptions;
 		
 		features={"C:\\Users\\ACC\\eclipse-workspace\\coverfoxTesting\\src\\test\\resources\\FeatureFiles\\CoverfoxHealthInsurance.feature"},
 		glue= { "stepDefinations","hooks"},
-		plugin = { "pretty" ,"json:target/cucumber.json"},
+		plugin = { "pretty" ,"html:target/Cucumber-reports/reports.html","json:target/Cucumber-reports/reports.json"},
 		publish = true,
 		dryRun = false
 		
