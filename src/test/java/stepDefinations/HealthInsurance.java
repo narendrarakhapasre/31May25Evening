@@ -3,6 +3,7 @@ package stepDefinations;
 import java.io.IOException;
 
 import org.apache.poi.EncryptedDocumentException;
+import org.testng.Assert;
 //import org.testng.Assert;
 import org.testng.Reporter;
 
@@ -65,7 +66,7 @@ public class HealthInsurance
 	   coverfoxAddressDetails1.enterPinCode(pincode);
 	   coverfoxAddressDetails1.enterMobileNum(mobNum);
 	   coverfoxAddressDetails1.continueButton();
-	  // Assert.fail();
+	  Assert.fail();
 	}
 
 	@Then("matching health insurance plans should be displayed as {string}")
